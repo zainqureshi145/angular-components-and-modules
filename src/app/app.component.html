@@ -1,1 +1,20 @@
+<!-- <h1>Component will be created BELOW</h1>
 <router-outlet></router-outlet>
+<h1>Component will be created ABOVE</h1> -->
+
+<!-- <a href="elements">Elements</a>
+<a href="collections">Collections</a>
+<router-outlet></router-outlet> -->
+
+<!-- href reloads whole application -->
+
+<div class="ui container">
+    <div class="ui secondary pointing menu">
+        <a routerLink = "/elements" class="item" routerLinkActive = "active">Elements</a>
+        <a routerLink = "/collections" class="item" routerLinkActive = "active">Collections</a>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+</div>
++
