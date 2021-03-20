@@ -1,8 +1,6 @@
-<app-divider>Modal</app-divider>
-
-<div class="ui dimmer visible active">
-    <div class="ui modal visible active">
-        <i class="close icon"></i>
+<div (click) = "onCloseClick()" class="ui dimmer visible active">
+    <div (click) = "$event.stopPropagation()" class="ui modal visible active">
+        <i (click) = "onCloseClick()" class="close icon"></i>
         <div class="header">
             Modal
         </div>
@@ -10,7 +8,7 @@
             <p>Content for modal window</p>
         </div>
         <div class="actions">
-            <button class="ui button">Ok</button>
+            <button (click) = "onCloseClick()" class="ui button">Ok</button>
         </div>
     </div>
 </div>
